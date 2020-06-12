@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 청첩장</title>
+    <style>
+        body { text-align: center;}
+        h1 { padding-top: 30px;}
+        #app {
+            position: relative;
+            width: 500px;
+            height: 800px;
+            background-image: url('./images/phone.png');
+            overflow: hidden;
+            margin: auto;
+        }
+        #app > .wrapper {
+            position: absolute;
+            left: 101px;
+            top: 150px;
+            width: 283px;
+            height: 480px;
+            overflow: hidden;
+            box-sizing: border-box;;
+            /* border: 1px solid red; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Moblie Invitation</h1>
+    <div id="app">
+        <div class="wrapper">
+            <iframe 
+              width="300" 
+              height="100%" 
+              src="https://ado87.github.io/wedding/" frameborder="0"></iframe>
+          </div>
+    </div>
+</body>
+</html>
