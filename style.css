@@ -1,0 +1,276 @@
+* { margin: 0; padding: 0;}
+li { list-style: none;}
+header {
+    width: 100%;
+    height: 240px;
+}
+h1 { font-family: 'Nanum Myeongjo', serif;}
+header > .border {
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+header > p {
+    font-size: 13px;
+    color: #5d5d5a;
+    text-transform: uppercase;
+    opacity: 0.4;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+header > .wedding > h1 {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+header > .wedding > p {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#visual {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+#visual img {
+    width: 100%;
+}
+#info {
+    width: 100%;
+}
+
+#info > .border {
+    width: 50%;
+    height: 150px;
+    border-right: 1px solid #000;
+    opacity: 30%;
+    margin-top: 50px;
+}
+#info > .time {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #8a460f;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#info > .time span {
+    margin-left: 10px;
+}
+#info > .place {
+    text-align: center;
+    color: #5d5d5a;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#content > .section_header {
+    width: 100%;
+    height: 100px;
+    background: #ffcdab;
+    margin-top: 50px;
+}
+#content > .section_header > h1 {
+    text-align: center;
+    line-height: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #5d5d5a;
+}
+#content > .invitation {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#content > .invitation img {
+    width: 25%;
+    margin-left: 37%;
+    margin-bottom: 20px;
+}
+
+#content > .invitation > p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#content > .section_footer {
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+    background: #ffcdab;
+    margin-top: 30px;
+}
+#content > .section_footer > .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+#content > .section_footer > .left > h4 {
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: #5d5d5a;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#content > .section_footer > .left > h4 span {
+    font-size: 16px;
+    color: #5c8d89;
+}
+#content > .section_footer > .left > a i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #5d5d5a;
+}
+
+#content > .section_footer > .right {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+#content > .section_footer > .right > h4 {
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: #5d5d5a;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#content > .section_footer > .right > h4 span {
+    font-size: 16px;
+    color: #5c8d89;
+}
+#content > .section_footer > .right > a i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #5d5d5a;
+}
+#gallery {
+    width: 100%;
+    padding-bottom: 50px;
+}
+#gallery > .g_header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #5d5d5a;
+}
+#gallery > .photo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+}
+#gallery > .photo > ul > li {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 5px;
+    /* background: #000; */
+}
+#gallery > .photo > ul > li:nth-child(3n) {
+    margin-right: 0;
+}
+#gallery > .photo > ul > li img {
+    width: 100%;
+}
+#location {
+    width: 100%;
+    height: 650px;
+    background: #fff4e3;
+}
+#location > .header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+#location > .header > h1 {
+    color: #5d5d5a;
+}
+#location > .info {
+    width: 90%;
+    margin: 0 auto;
+}
+#location > .info > .text {
+    width: 80%;
+    margin-bottom: 10px;
+    float: left;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#location > .info > .text p {
+    font-size: 13px;
+    color: #5d5d5a;
+    font-weight: 600;
+    line-height: 20px;
+}
+#location > .info > .text p span {
+    font-weight: 400;
+}
+#location > .info > .convention {
+    width: 20%;
+    float: right;
+    text-align: center;
+}
+#location > .info > .convention > a i {
+    color: #fff;
+    background: #5d5d5a;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+#location > .map {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    border: 4px solid #fff;
+    overflow: hidden;
+}
+#location > .map > iframe { width: 100%;}
+#location > .nav {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 22px;
+    background: #ffa45c;
+    font-family: 'Nanum Gothic', sans-serif;
+    overflow: hidden;
+}
+#location > .nav > .way {
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#location > .nav > .way > ul > h4 {
+    color: #ffefe4;
+}
+#location > .nav > .way > ul > li {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #000;
+}
