@@ -3,39 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>모바일 청첩장</title>
-    <style>
-        body { text-align: center;}
-        h1 { padding-top: 30px;}
-        #app {
-            position: relative;
-            width: 500px;
-            height: 800px;
-            background-image: url('./images/Phone.png');
-            overflow: hidden;
-            margin: auto;
+   
+    <title>푸드모바일</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script language="Javascript">
+        function setCookie(name, value, expiredays) {
+            var todayDate = new Date();
+            todayDate.setDate( todayDate.getDate() + expiredays );
+            document.cookie = name + "=" + escape(value) +"; path=/; expires=" + todayDate.toGMTString() + ";"
         }
-        #app > .wrapper {
-            position: absolute;
-            left: 101px;
-            top: 150px;
-            width: 283px;
-            height: 480px;
-            overflow: hidden;
-            box-sizing: border-box;;
-            /* border: 1px solid red; */
+        function closePop() {
+            if(document.pop_form.chkbox.checked) {
+                setCookie("maindiv", 'done', 1);
+            }
+            document.all['pop2'].sytle.visibility="hidden";
         }
-    </style>
+    </script>
+
 </head>
 <body>
-    <h1>Moblie Invitation</h1>
-    <div id="app">
-        <div class="wrapper">
-            <iframe 
-              width="300" 
-              height="100%" 
-              src="https://ado87.github.io/wedding/" frameborder="0"></iframe>
-          </div>
+
+    <div id="pop">
+        <div style="height: 650px;">
+            <!-- <img src="./image/company.jpg" width="500px"> -->
+        </div>
+        <div class="close">
+            <form name="pop_form">
+                <div id="check"><input type="checkbox" name="chkbox" value="checkbox">오늘 하루 이 창을 열지 않음</div>
+                <div id="close" style="margin:auto;"><a href="javascript:closePop()">CLOSE</a></div>
+            </form>
+        </div>
     </div>
+
+    <div id="pop2">
+        <div style="height: 650px;">
+            <!-- <img src="./image/company.jpg" width="500px"> -->
+        </div>
+        <div class="close">
+            <form name="pop_form">
+                <div id="check"><input type="checkbox" name="chkbox" value="checkbox">오늘 하루 이 창을 열지 않음</div>
+                <div id="close" style="margin:auto;"><a href="javascript:closePop()">CLOSE</a></div>
+            </form>
+        </div>
+    </div>
+
+    <script language="Javascript">
+        // cookiedata = document.cookie;
+        // if(cookiedata.indexOf("maindiv=done") < 0){
+        //     document.all['pop'].style.visibility="visible";
+        // }
+        // else {
+        //     document.all['pop'].style.visibility="hidden";
+        // }
+        // cookiedata = document.cookie;
+        // if(cookiedata.indexOf("maindiv=done") < 0){
+        //     document.all['pop2'].style.visibility="visible";
+        // }
+        // else {
+        //     document.all['pop2'].style.visibility="hidden";
+        // }
+    </script>
+    <!-- <div class="popup" style="position: absolute; margin-left: 50%; left: 300px; top: 170px; z-index: 9999999;">
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <form name="notice_form"></form>
+            <tbody>
+                <tr>
+                    <td align="center" bgcolor="white">
+                        <img src="./image/company.jpg" width="500px" height="600px" border="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50" bgcolor="#000000">
+                        <input type="checkbox" name="event">오늘 하루 이 창을 열지 않음
+                        <input type="button" value="닫기" onclick="self.close()">
+                        <a href="#">
+                            <b>
+                                <font color="#ffffff" size="3">[닫기]</font>
+                            </b>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+
+    <header>
+        <div>
+            <h1><a href="./index.html"><img src="./image/logo.png" alt=""></a></h1>
+            <div class="menu">
+                <ul class="depth1">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li>
+                        <a href="./menu.html">브랜드소개</a>
+                        <ul class="depth2">
+                            <li><a href="./menu.html">레전드 고기한상</a></li>
+                            <li><a href="./menu2.html">긴말하지 않겠다 냉면</a></li>
+                            <li><a href="./menu3.html">알밥왕</a></li>
+                            <li><a href="./menu4.html">할머니레시피 & 직화</a></li>
+                            <li><a href="./menu5.html">로얄분식</a></li>
+                            <li><a href="./menu6.html">불난집 생선구이</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./place.html">매장안내</a></li>
+                    <li><a href="./info.html">창업안내</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <section id="visual">
+        <div class="main_visual">
+            <img src="./image/title.jpg" alt="">
+        </div>
+        <div class="main_visual2">
+            <img src="./image/review.jpg" alt="">
+        </div>
+    </section>
+    
+    <section id="content">
+        <div class="content_img">
+            <img src="./image/foodmobile2.jpg" alt="">
+        </div>
+    </section>    
+
+    <footer id="main_footer">
+        <div>
+            <p>주소: 서울특별시 영등포구 신길동 가마산로 71길 19, 1층</p>
+            <p>TEL: 1600-4342 | e-mail: nodoubt1111@naver.com</p>
+            <p>사업자등록번호: 799-81-01582 | 대표: 조항돈</p>
+            <span>Coptright©2020 푸드모바일 All right reserved.</span>
+        </div>
+    </footer>
 </body>
 </html>
