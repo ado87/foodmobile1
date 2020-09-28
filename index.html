@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script language="Javascript">
+    <!-- <script language="Javascript">
         function setCookie(name, value, expiredays) {
             var todayDate = new Date();
             todayDate.setDate( todayDate.getDate() + expiredays );
@@ -20,14 +20,14 @@
             }
             document.all['pop2'].sytle.visibility="hidden";
         }
-    </script>
+    </script> -->
 
 </head>
 <body>
-
-    <div id="pop">
+     
+    <!-- <div id="pop">
         <div style="height: 650px;">
-            <!-- <img src="./image/company.jpg" width="500px"> -->
+            <img src="./image/company.jpg" width="500px">
         </div>
         <div class="close">
             <form name="pop_form">
@@ -39,7 +39,7 @@
 
     <div id="pop2">
         <div style="height: 650px;">
-            <!-- <img src="./image/company.jpg" width="500px"> -->
+            <img src="./image/company.jpg" width="500px">
         </div>
         <div class="close">
             <form name="pop_form">
@@ -47,51 +47,35 @@
                 <div id="close" style="margin:auto;"><a href="javascript:closePop()">CLOSE</a></div>
             </form>
         </div>
-    </div>
-
-    <script language="Javascript">
-        // cookiedata = document.cookie;
-        // if(cookiedata.indexOf("maindiv=done") < 0){
-        //     document.all['pop'].style.visibility="visible";
-        // }
-        // else {
-        //     document.all['pop'].style.visibility="hidden";
-        // }
-        // cookiedata = document.cookie;
-        // if(cookiedata.indexOf("maindiv=done") < 0){
-        //     document.all['pop2'].style.visibility="visible";
-        // }
-        // else {
-        //     document.all['pop2'].style.visibility="hidden";
-        // }
-    </script>
-    <!-- <div class="popup" style="position: absolute; margin-left: 50%; left: 300px; top: 170px; z-index: 9999999;">
-        <table width="100%" cellpadding="0" cellspacing="0">
-            <form name="notice_form"></form>
-            <tbody>
-                <tr>
-                    <td align="center" bgcolor="white">
-                        <img src="./image/company.jpg" width="500px" height="600px" border="0">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center" height="50" bgcolor="#000000">
-                        <input type="checkbox" name="event">오늘 하루 이 창을 열지 않음
-                        <input type="button" value="닫기" onclick="self.close()">
-                        <a href="#">
-                            <b>
-                                <font color="#ffffff" size="3">[닫기]</font>
-                            </b>
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div> -->
+
+    <!-- <script language="Javascript">
+        cookiedata = document.cookie;
+        if(cookiedata.indexOf("maindiv=done") < 0){
+            document.all['pop'].style.visibility="visible";
+        }
+        else {
+            document.all['pop'].style.visibility="hidden";
+        }
+        cookiedata = document.cookie;
+        if(cookiedata.indexOf("maindiv=done") < 0){
+            document.all['pop2'].style.visibility="visible";
+        }
+        else {
+            document.all['pop2'].style.visibility="hidden";
+        }
+    </script> -->
 
     <header>
         <div>
             <h1><a href="./index.html"><img src="./image/logo.png" alt=""></a></h1>
+            <div class="text">
+                <ul>
+                    <li><h3>성공창업</h3></li>
+                    <li>으로 가는</li>
+                    <li><h3>가장 빠른길</h3></li>
+                </ul>
+            </div>
             <div class="menu">
                 <ul class="depth1">
                     <li><a href="./index.html">HOME</a></li>
@@ -128,7 +112,10 @@
         <div class="content_img">
             <img src="./image/foodmobile2.jpg" alt="">
         </div>
-    </section>    
+        <div class="map">
+            <img src="./image/map.jpg" alt="">
+        </div>
+    </section>  
 
     <footer id="main_footer">
         <div>

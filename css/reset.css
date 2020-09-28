@@ -6,7 +6,7 @@
 }
 
 header {
-    width: 100%;
+    width: 1920px;
     height: 100px;
     background: #fff;
     /* overflow: hidden; */
@@ -14,19 +14,28 @@ header {
     z-index: 99999;
 }
 header > div {
-    width: 100%;
-    /* margin: 0 auto; */
+    width: 1500px;
+    margin: 0 auto;
+}
+header > div > .text {
+ float: left;
+ margin-top: 40px;
+ margin-left: 30px;
+ font-size: 14px;
+}
+header > div > .text > ul > li {
+    display: inline-block;
 }
 header > div > h1 a {
     margin-left: 5%;
     color: #000;
     float: left;
 }
-header > div > div {
+header > div > .menu {
     float: right;
     margin-right: 5%;
 }
-header > div > div > .depth1 > li {
+header > div > .menu > .depth1 > li {
     width: 160px;
     float: left;
     text-align: center;
@@ -34,23 +43,23 @@ header > div > div > .depth1 > li {
     line-height: 40px;
     overflow: hidden;
 }
-header > div > div > .depth1 > li a {
+header > div > .menu > .depth1 > li a {
     color: #000;
     font-weight: bolder;
     display: block;
 }
-header > div > div > ul > li a:hover {
+header > div > .menu > ul > li a:hover {
     color: #ee6f14;
     transition: 0.2s;
 }
 
-div > ul > li > .depth2 {
+.menu > ul > li > .depth2 {
     /* display: none; */
     opacity: 0;
     max-height: 0px;
     transition-duration: 0.2s;
 }
-header > div > div > .depth1 > li:hover > .depth2 {
+header > div > .menu > .depth1 > li:hover > .depth2 {
     width: 160px;
     margin: 0 auto;
     max-height: 450px;
@@ -61,14 +70,14 @@ header > div > div > .depth1 > li:hover > .depth2 {
     box-sizing: border-box;
     overflow: hidden;
 }
-header > div > div > ul > li:hover > .depth2 > li {
+header > div > .menu > ul > li:hover > .depth2 > li {
     background: #fff;
     font-size: 14px;
 }
-header > div > div > ul > li:hover > .depth2 > li a {
+header > div > .menu > ul > li:hover > .depth2 > li a {
     color: #888;
 }
-header > div > div > ul > li:hover > .depth2 > li a:hover {
+header > div > .menu > ul > li:hover > .depth2 > li a:hover {
     color: #ee6f14;
 }
 
