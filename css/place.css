@@ -2,6 +2,7 @@
 
 
 #visual {
+    width: 1920px;
     overflow: hidden;
 }
 #visual > .visual_img {
@@ -12,7 +13,7 @@
 
 
 #content {
-    width: 100%;
+    width: 1920px;
     background: #f1f1f1;
 }
 #content > div {
