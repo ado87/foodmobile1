@@ -47,6 +47,15 @@
      margin-top: 15px;
      /* color: #3d3d3d; */
  }
+ #div_laypopup2 {
+     width: 500px;
+     height: 680px;
+     background: #fff;
+ }
+ #div_laypopup2 > input {
+     margin-top: 15px;
+     /* color: #3d3d3d; */
+ }
 
  .link {
     width: 60px;
