@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 #visual > .visual_img {
-    width: 100%;
+    width: 1920px;
     height: 350px;
     margin-top: 100px;
 }
@@ -16,7 +16,7 @@
     background: #f1f1f1;
 }
 #content > div {
-    width: 100%;
+    width: 1920px;
     height: 1200px;
     overflow: hidden;
 }
