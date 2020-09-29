@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 #visual > .menu {
-    width: 100%;
+    width: 1920px;
     height: 350px;
     background: #f57921;
     background-size: cover;
@@ -99,10 +99,21 @@
     font-size: 30px;
     padding: 30px;
 }
-#info > .menu_list > .menu_text p {
-    padding-left: 30px;
+#info > .menu_list > .menu_text > .text_info {
+    width: 500px;
+    height: 100px;
+    background: rgb(238, 238, 238);
+    margin-left: 30px;
+    border: 1px solid rgb(185, 185, 185);
+    /* border-radius: 5px; */
+}
+#info > .menu_list > .menu_text > .text_info p {
+    padding-left: 20px;
     line-height: 30px;
     font-size: 18px;
+    padding-top: 20px;
+    /* font-weight: bold; */
+    color: rgb(141, 141, 141);
 }
 #info > .menu_list > .menu_text > .img {
     width: 700px;

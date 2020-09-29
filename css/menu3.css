@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 #visual > .menu {
-    width: 100%;
+    width: 1920px;
     height: 350px;
     background: #f57921;
     background-size: cover;
@@ -101,7 +101,7 @@
 }
 #info > .menu_list > .menu_text > .text_info {
     width: 500px;
-    height: 150px;
+    height: 120px;
     background: rgb(238, 238, 238);
     margin-left: 30px;
     border: 1px solid rgb(185, 185, 185);
@@ -111,7 +111,7 @@
     padding-left: 20px;
     line-height: 30px;
     font-size: 18px;
-    padding-top: 30px;
+    padding-top: 15px;
     /* font-weight: bold; */
     color: rgb(141, 141, 141);
 }

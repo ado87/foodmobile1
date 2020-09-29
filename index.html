@@ -7,17 +7,17 @@
     <title>푸드모바일</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script src="./js/main.js"></script>
 
 </head>
 <body>
      
-    <div id="div_laypopup" align="center" style="display:block;border-width:0px;Z-INDEX: 99999999; POSITION: absolute;left:528px; top:200px;">
+    <div id="div_laypopup" align="center" style="display:block;border-width:0px; z-index: 99999; position: absolute;left:428px; top:200px;">
         <img src="./image/popup.jpg" alt="">
         <input type="checkbox" name="close" value="OK" onclick="javascript:closeWin('div_laypopup', 1);"/>닫기
      </div>
 
-     <script type="text/javascript">  
+     <script type="text/javascript">
            openWin('div_laypopup');  
     </script>
 
@@ -116,8 +116,6 @@
             </div>
         </div>
     </header>
-
-
     
     <section id="visual">
         <div class="main_visual">
@@ -135,7 +133,11 @@
         <div class="map">
             <img src="./image/map.jpg" alt="">
         </div>
-    </section>  
+    </section>
+
+    <div class="link">
+        <a href="#" class="top">TOP</a>
+    </div>
 
     <footer id="main_footer">
         <div>
