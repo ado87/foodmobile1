@@ -11,10 +11,10 @@ header {
     background: #fff;
     /* overflow: hidden; */
     position: fixed;
-    z-index: 99999;
+    z-index: 99;
 }
 header > div {
-    width: 1500px;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -33,7 +33,6 @@ header > div > h1 a {
 }
 header > div > .menu {
     float: right;
-    margin-left: 5%;
 }
 header > div > .menu > .depth1 > li {
     width: 160px;
@@ -82,7 +81,7 @@ header > div > .menu > ul > li:hover > .depth2 > li a:hover {
 }
 
 footer {
-    width: 100%;
+    width: 1920px;
     height: 400px;
     background: #000;
     overflow: hidden;
