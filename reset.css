@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    /* overflow: hidden; */
+    position: fixed;
+    z-index: 99999;
+}
+header > div {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+header > div > .text {
+ float: left;
+ margin-top: 40px;
+ margin-left: 20px;
+ font-size: 14px;
+}
+header > div > .text > ul > li {
+    display: inline-block;
+}
+header > div > h1 a {
+    color: #000;
+    float: left;
+}
+header > div > .menu {
+    float: right;
+    margin-left: 5%;
+}
+header > div > .menu > .depth1 > li {
+    width: 160px;
+    float: left;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 40px;
+    overflow: hidden;
+}
+header > div > .menu > .depth1 > li a {
+    color: #000;
+    font-weight: bolder;
+    display: block;
+}
+header > div > .menu > ul > li a:hover {
+    color: #ee6f14;
+    transition: 0.2s;
+}
+
+.menu > ul > li > .depth2 {
+    /* display: none; */
+    opacity: 0;
+    max-height: 0px;
+    transition-duration: 0.2s;
+}
+header > div > .menu > .depth1 > li:hover > .depth2 {
+    width: 160px;
+    margin: 0 auto;
+    max-height: 450px;
+    opacity: 1;
+    border: 3px solid #ee6f14;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header > div > .menu > ul > li:hover > .depth2 > li {
+    background: #fff;
+    font-size: 14px;
+}
+header > div > .menu > ul > li:hover > .depth2 > li a {
+    color: #888;
+}
+header > div > .menu > ul > li:hover > .depth2 > li a:hover {
+    color: #ee6f14;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background: #000;
+    overflow: hidden;
+}
+footer > div {
+    margin-top: 160px;
+    text-align: center;
+}
+footer > div p {
+    color: #888;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+}
+footer > div span {
+    color: #888;
+    line-height: 30px;
+    font-size: 12px;
+}
