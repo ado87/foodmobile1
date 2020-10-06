@@ -25,6 +25,21 @@
     width: 1920px;
     display: block;
 }
+#visual > .main_visual2 > .text {
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    top: 1810px;
+    left: 625px;
+    background: #000;
+    text-align: center;
+    overflow: hidden;
+}
+#visual > .main_visual2 > .text > h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
 #content > .content_img {
     width: 1920px;
     /* height: 2150px; */

@@ -63,3 +63,22 @@ table td {
     font-size: 18px;
     /* background: #fff; */
 }
+
+.link {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    border-radius: 50px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    box-shadow: 2px 1px 5px 1px grey;
+ }
+ .link > .top {
+    line-height: 60px;
+    color: #000;
+    font-weight: bold;
+ }

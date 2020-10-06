@@ -35,7 +35,7 @@ header > div > .menu {
     float: right;
 }
 header > div > .menu > .depth1 > li {
-    width: 160px;
+    width: 190px;
     float: left;
     text-align: center;
     margin-top: 30px;
@@ -58,8 +58,28 @@ header > div > .menu > ul > li a:hover {
     max-height: 0px;
     transition-duration: 0.2s;
 }
+.menu > ul > li > .depth2 > li img {
+    position: relative;
+    top: 5px;
+}
+.menu > ul > li > .depth2 > li:first-child img {
+    position: relative;
+    right: 16px;
+}
+.menu > ul > li > .depth2 > li:nth-child(3) img {
+    position: relative;
+    right: 47px;
+}
+.menu > ul > li > .depth2 > li:nth-child(5) img {
+    position: relative;
+    right: 39px;
+}
+.menu > ul > li > .depth2 > li:nth-child(6) img {
+    position: relative;
+    right: 15px;
+}
 header > div > .menu > .depth1 > li:hover > .depth2 {
-    width: 160px;
+    width: 190px;
     margin: 0 auto;
     max-height: 450px;
     opacity: 1;
@@ -82,22 +102,45 @@ header > div > .menu > ul > li:hover > .depth2 > li a:hover {
 
 footer {
     width: 1920px;
-    height: 400px;
+    height: 250px;
     background: #000;
     overflow: hidden;
 }
-footer > div {
-    margin-top: 160px;
-    text-align: center;
+footer > .footer-wap {
+    width: 1200px;
+    margin: 0 auto;
 }
-footer > div p {
+footer > .footer-wap > .first {
+    width: 50%;
+    margin-top: 70px;
+    text-align: center;
+    float: left;
+}
+footer > .footer-wap .first p {
     color: #fff;
     text-align: center;
     line-height: 30px;
     font-size: 15px;
 }
-footer > div span {
+footer > .footer-wap .first span {
     color: #fff;
     line-height: 30px;
     font-size: 12px;
+}
+
+footer > .footer-wap .second {
+    width: 50%;
+    /* background: #fff; */
+    float: right;
+    text-align: center;
+    margin-top: 70px;
+}
+footer > .footer-wap .second h3 {
+    color: #fff;
+}
+footer > .footer-wap .second p {
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
 }

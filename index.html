@@ -11,7 +11,86 @@
 
 </head>
 <body>
+
+    <!-- <div id="pop_99" style="top: 200px; right: 30px; width: 500px; height: 800px; position: absolute; overflow: hidden;">
+        <div id="pop" class="pop">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="" target="_blank">
+                        <img src="./image/popup.jpg" style="width: 100%; height: 630px;">
+                    </a>
+                </li>
+            </ul>
+            <div class="box">
+                <div id="check_99" class="check">
+                    <input type="radio" name="chkbox">오늘 하루동안 보지 않기
+                </div>
+                <div id="close_99" class="close" style="margin: auto; cursor: pointer; float: right;" onclick="javascript:closePop('99');">닫기</div>
+            </div>
+        </div>
+    </div>
      
+    <script type="text/javascript">
+        //쿠키정보
+        cookiedata = document.cookie; 
+        //alert(cookiedata);
+        
+        //쿠키값에 따른 팝업 노출 처리
+        
+        PopVisible('0');
+        
+        PopVisible('0');
+        
+    
+        //팝업 노출
+        function PopVisible(pPopIdx){
+        if (cookiedata.indexOf("pop_"+pPopIdx+"=done") < 0 ){
+            $("#pop_"+pPopIdx+", .pop_"+pPopIdx).css({'visibility':'visible'});
+        }else{
+            $("#pop_"+pPopIdx).remove();
+            closeMask();
+        }
+        }
+
+        //팝업닫기
+        function closePop(pDivPopIdx) { 
+    
+        //오늘 하루동안 보지 않기 체크
+        if($("#check_"+pDivPopIdx+" input:radio[name='chkbox']").is(":checked")){
+            //쿠키설정
+            setCookie("pop_"+pDivPopIdx, "done" , 1); 
+        }
+
+        //팝업 없애기
+        $("#pop_"+pDivPopIdx).remove();
+
+        //마스크 체크
+        closeMask(); 
+    
+        }
+
+        //쿠키설정
+        function setCookie( name, value, expiredays ) { 
+        var todayDate = new Date(); 
+        todayDate.setDate(todayDate.getDate() + expiredays); 
+        document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+        }
+
+        //Mask 닫기
+        function closeMask() {
+
+        //노출되는 팝업이 없는 경우 없애기
+        if($('div[id^=pop_]').length == 0){
+            $("#mask").hide();
+        }
+        }
+    </script> -->
+   
+    <div class="right">
+
+    </div>
+
+
     <div id="div_laypopup" align="center" style="display:block;border-width:0px; z-index: 99999; position: absolute;left:428px; top:200px;">
         <img src="./image/popup.jpg" alt="">
         <input type="checkbox" name="close" value="OK" onclick="javascript:closeWin('div_laypopup', 1);"/>닫기
@@ -169,20 +248,34 @@
             </div>
             <div class="menu">
                 <ul class="depth1">
-                    <li><a href="./index.html">HOME</a></li>
                     <li>
+                        <a href="./index.html">정직한 회사</a>
+                        <ul class="depth2">
+                            <li><a href="./ceo.html">CEO인사말</a></li>
+                            <li><a href="./company.html">회사소개</a></li>
+                            <li><a href="./bici.html">BI.CI</a></li>
+                            <li><a href="./road.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_depth">
                         <a href="./menu.html">브랜드소개</a>
                         <ul class="depth2">
-                            <li><a href="./menu.html">레전드 고기한상</a></li>
-                            <li><a href="./menu2.html">긴말하지 않겠다 냉면</a></li>
-                            <li><a href="./menu3.html">알밥왕</a></li>
-                            <li><a href="./menu4.html">할머니레시피 & 직화</a></li>
-                            <li><a href="./menu5.html">로얄분식</a></li>
-                            <li><a href="./menu6.html">불난집 생선구이</a></li>
+                            <li><a href="./menu.html"><img src="./image/logo1.png" style="margin-top: 10px;"> 레전드 고기한상</a></li>
+                            <li><a href="./menu2.html"><img src="./image/logo2.png" alt=""> 긴말하지 않겠다 냉면</a></li>
+                            <li><a href="./menu3.html"><img src="./image/logo3.png"> 알밥왕</a></li>
+                            <li><a href="./menu4.html"><img src="./image/logo4.png" alt=""> 할머니레시피 & 직화</a></li>
+                            <li><a href="./menu5.html"><img src="./image/logo5.png" alt=""> 로얄분식</a></li>
+                            <li><a href="./menu6.html"><img src="./image/logo6.png" alt=""> 불난집 생선구이</a></li>
                         </ul>
                     </li>
                     <li><a href="./place.html">매장안내</a></li>
-                    <li><a href="./info.html">창업안내</a></li>
+                    <li>
+                        <a href="./info.html">창업안내</a>
+                        <ul class="depth2">
+                            <li><a href="./info.html">창업절차</a></li>
+                            <li><a href="./submit.html">창업문의</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -194,6 +287,9 @@
         </div>
         <div class="main_visual2">
             <img src="./image/review.jpg" alt="">
+            <div class="text">
+                <h1>오픈 2달만에 매출 1억 달성!!</h1>
+            </div>
         </div>
     </section>
     
@@ -211,11 +307,19 @@
     </div>
 
     <footer id="main_footer">
-        <div>
-            <p>주소: 서울특별시 영등포구 신길동 가마산로 71길 19, 1층</p>
-            <p>TEL: 1600-4342 | e-mail: nodoubt1111@naver.com</p>
-            <p>사업자등록번호: 799-81-01582 | 대표: 조항돈</p>
-            <span>Coptright©2020 푸드모바일 All right reserved.</span>
+        <div class="footer-wap">
+            <div class="first">
+                <p>주소: 서울특별시 영등포구 신길동 가마산로 71길 19, 1층</p>
+                <p>TEL: 1600-4342 | e-mail: nodoubt1111@naver.com</p>
+                <p>사업자등록번호: 799-81-01582 | 대표: 조항돈</p>
+                <span>Coptright©2020 푸드모바일 All right reserved.</span>
+            </div>
+            <div class="second">
+                <h3>work hour</h3>
+                <p>월 ~ 금요일 : 오전 11 ~ 오후 08시까지</p>
+                <p>토 일 공유일은 휴뮤입니다</p>
+                <p>업무시간 외에는 메일로 문의 바랍니다.</p>
+            </div>
         </div>
     </footer>
 </body>

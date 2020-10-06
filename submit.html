@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <scripttype="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    
+    <link rel="stylesheet" href="./css/submit.css">
+    <scripttype="text/javascript">
+        (function() {
+        emailjs.init("user_1T8mwuF8vNfibtys3OLoD");
+        })();
+    </script>
+</head>
+<body>
+
+    <input type="text" name="name" placeholder="성함을 입력해주세요">
+<input type="text" name="email" placeholder="메일 주소를 입력해주세요">
+<input type="text" name="phone" placeholder="연락처를 입력해주세요 (생략 가능)">
+<textarea name="message" rows="5" placeholder="내용을 입력해주세요 "></textarea>
+<input type="button" name="submit" class="btn white" value="메일보내기"/>
+
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		emailjs.init("user_xxxxxxxx");		
+        //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
+        $('input[name=submit]').click(function(){       	 
+          
+          var templateParams = {	
+          //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
+                name: $('input[name=name]').val(),
+                phone: $('input[name=phone]').val(), 
+                email : $('input[name=email]').val(),
+                message : $('textarea[name=message]').val()
+           				};
+                    
+                	
+         emailjs.send('gmail', 'template_GH8tn3us', templateParams)
+         //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
+         	    .then(function(response) {
+         	       console.log('SUCCESS!', response.status, response.text);
+         	    }, function(error) {
+         	       console.log('FAILED...', error);
+         	    });
+         	       
+
+
+        });
+        
+	  });
+    
+
+	</script>
+    <header>
+        <div>
+            <h1><a href="./index.html"><img src="./image/logo.png" alt=""></a></h1>
+            <div class="text">
+                <ul>
+                    <li><h3>성공창업</h3></li>
+                    <li>으로 가는</li>
+                    <li><h3>가장 빠른길</h3></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <ul class="depth1">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li class="menu_depth">
+                        <a href="./menu.html">브랜드소개</a>
+                        <ul class="depth2">
+                            <li><a href="./menu.html"><img src="./image/logo1.png" style="margin-top: 10px;"> 레전드 고기한상</a></li>
+                            <li><a href="./menu2.html"><img src="./image/logo2.png" alt=""> 긴말하지 않겠다 냉면</a></li>
+                            <li><a href="./menu3.html"><img src="./image/logo3.png"> 알밥왕</a></li>
+                            <li><a href="./menu4.html"><img src="./image/logo4.png" alt=""> 할머니레시피 & 직화</a></li>
+                            <li><a href="./menu5.html"><img src="./image/logo5.png" alt=""> 로얄분식</a></li>
+                            <li><a href="./menu6.html"><img src="./image/logo6.png" alt=""> 불난집 생선구이</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./place.html">매장안내</a></li>
+                    <li><a href="./info.html">창업안내</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="fix">
+        <div class="wrap">
+
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col-md-12 mb-30">
+          <!-- 폼메일 시작 --------------------------------------------------------->
+
+<script language="javascript" src="/cjs/formmail.js?com_formmail_id=3&amp;template=bizdemo70191"></script>
+<div style="border-top:2px #333 solid;"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#FFFFFF">
+<form name="com_formmail" method="post" action="https://akslaksl2021.cafe24.com/default/franchise/02.php?ip=112.171.40.134" enctype="multipart/form-data"><input type="hidden" name="ssl_redirect_domain" value="http://yoboy.co.kr"></form>
+<input title="input" type="hidden" name="com_formmail3_basic" value="send">
+<input title="input" type="hidden" name="template" value="bizdemo70191">
+<tbody><tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="formtable" frame="void">
+        <tbody><tr height="30">
+    <td width="20%" align="center" class="formmail_title_bgcolor">
+                <font style="color:#000000;font-size:12;">성함</font>
+            </td>
+    <td width="80%" style="padding-left:10" class="formmail_cell_bgcolor">
+
+                                <input type="text" class="formmail_border" name="name" maxlength="100" size="50" value="">
+                    &nbsp;&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        </td>
+</tr>
+    <tr height="30">
+    <td width="20%" align="center" class="formmail_title_bgcolor">
+                <font style="color:#000000;font-size:12;">창업형태</font>
+            </td>
+    <td width="80%" style="padding-left:10" class="formmail_cell_bgcolor">
+
+    
+    
+    
+    
+    
+    
+    
+    
+                <select name="category">
+                            <option value="0" selected="">신규창업</option>";
+                            <option value="1">업종전환</option>";
+                            <option value="2"></option>";
+                        </select>
+        
+    
+    
+    
+    
+        </td>
+</tr>
+    <tr height="30">
+    <td width="20%" align="center" class="formmail_title_bgcolor">
+                <font style="color:#000000;font-size:12;">전화번호</font>
+            </td>
+    <td width="80%" style="padding-left:10" class="formmail_cell_bgcolor">
+
+    
+    
+    
+    
+                
+                                                <input type="text" class="formmail_border" name="phone_no1" size="4" maxlength="5" value=""> - <input type="text" class="formmail_border" name="phone_no2" size="5" maxlength="5" value=""> - <input type="text" class="formmail_border" name="phone_no3" size="5" maxlength="5" value="">
+        &nbsp;&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+        </td>
+</tr>
+    <tr height="30">
+    <td width="20%" align="center" class="formmail_title_bgcolor">
+                <font style="color:#000000;font-size:12;">창업 희망지역</font>
+            </td>
+    <td width="80%" style="padding-left:10" class="formmail_cell_bgcolor">
+
+    
+    
+    
+    
+    
+    
+                                            <input type="text" class="formmail_border" name="add1_post1" size="5" maxlength="5" value=""> <a href="javascript: com_formmail_zipcode('add1_post1', 'add1_post2', 'add1')"><img src="/cimg/btn_zip.gif" align="absmiddle" border="0"></a><br>
+                    <input type="text" class="formmail_border" name="add1" size="70" value=" ">
+        <br>
+    
+    
+    
+    
+    
+    
+                <input type="hidden" name="add1_attr" value="7">
+        </td>
+</tr>
+    <tr height="30">
+    <td width="20%" align="center" class="formmail_title_bgcolor">
+                <font style="color:#000000;font-size:12;">점포유무</font>
+            </td>
+    <td width="80%" style="padding-left:10" class="formmail_cell_bgcolor">
+
+    
+    
+    
+    
+    
+    
+    
+    
+                <select name="add2">
+                            <option value="0" selected="">있다</option>";
+                            <option value="1">없다</option>";
+                        </select>
+        
+    
+    
+    
+    
+                <input type="hidden" name="add2_attr" value="9">
+        </td>
+</tr>
+    <tr height="30">
+    <td width="20%" align="center" class="formmail_title_bgcolor">
+                <font style="color:#000000;font-size:12;">점포평수</font>
+            </td>
+    <td width="80%" style="padding-left:10" class="formmail_cell_bgcolor">
+
+                                <input type="text" class="formmail_border" name="add3" maxlength="20" size="20" value="">
+                    &nbsp;&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                <input type="hidden" name="add3_attr" value="1">
+        </td>
+</tr>
+    <tr height="30">
+    <td width="20%" align="center" class="formmail_title_bgcolor">
+                <font style="color:#000000;font-size:12;">접속경로</font>
+            </td>
+    <td width="80%" style="padding-left:10" class="formmail_cell_bgcolor">
+
+    
+    
+    
+    
+    
+    
+    
+    
+                <select name="add4">
+                            <option value="0" selected="">TV 방송</option>";
+                            <option value="1">홈페이지</option>";
+                            <option value="2">온라인</option>";
+                            <option value="3">매장</option>";
+                            <option value="4">커뮤니티</option>";
+                            <option value="5">지인</option>";
+                            <option value="6">기타</option>";
+                        </select>
+        
+    
+    
+    
+    
+                <input type="hidden" name="add4_attr" value="9">
+        </td>
+</tr>
+    <tr height="30">
+    <td width="20%" align="center" class="formmail_title_bgcolor">
+                <font style="color:#000000;font-size:12;">문의내용</font>
+            </td>
+    <td width="80%" style="padding-left:10" class="formmail_cell_bgcolor">
+
+    
+                                <textarea class="formmail_textarea_style" cols="52" name="description" style="height:300px;"></textarea>
+                    <br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        </td>
+</tr>
+    <tr height="30">
+    <td width="20%" align="center" class="formmail_title_bgcolor">
+                <font style="color:#000000;font-size:11;">파일첨부</font>
+            </td>
+    <td width="80%" style="padding-left:10" class="formmail_cell_bgcolor">
+
+    
+    
+    
+    
+    
+    
+    
+                <input type="hidden" class="formmail_border" name="attachment_max" value="2">
+                        <input type="file" class="formmail_border" name="attachment[]" size="55"><br>
+                    
+    
+    
+    
+    
+    
+        </td>
+</tr>
+
+<tr>
+<td class="formmail_cell_bgcolor" colspan="2" style="padding : 10px">
+    <table cellspacing="0" cellpadding="0" width="100%">
+    <tbody><tr>
+        <td align="left" style="border:0px">· 개인정보의 수집 및 이용목적</td>
+        <td align="right" style="border:0px"><input type="checkbox" name="com_formmail_check_safe"> 개인정보의 수집 및 이용목적에 동의합니다.</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="border:0px"><textarea readonly="" style="font-size:12px; width:100%; padding:5px" rows="9">▶ 개인정보의 수집 및 이용목적
+- 서비스 이용에 따른 본인식별, 실명확인, 가입의사 확인, 연령제한 서비스 이용
+- 고지사항 전달, 불만처리 의사소통 경로 확보, 물품배송 시 정확한 배송지 정보 확보
+- 신규 서비스 등 최신정보 안내 및 개인맞춤서비스 제공을 위한 자료
+- 기타 원활한 양질의 서비스 제공 등
+
+▶ 수집하는 개인정보의 항목
+- 이름, 이메일, 주민등록번호, 주소, 연락처, 핸드폰번호, 그 외 선택항목
+
+▶ 개인정보의 보유 및 이용기간
+- 원칙적으로 개인정보의 수집 또는 제공받은 목적 달성 시 지체 없이 파기합니다.
+- 다만, 원활한 서비스의 상담을 위해 상담 완료 후 내용을 3개월간 보유할 수 있으며
+전자상거래에서의 소비자보호에 관한 법률 등 타법률에 의해 보존할 필요가 있는 경우에는 일정기간 보존합니다.
+</textarea></td>
+    </tr>
+    </tbody></table>
+    <!--[if IE]>
+    <style>
+    .formmail_agreement { float:left; }
+    </style>
+    <![endif]-->
+    <!--
+    <div class="formmail_agreement" style="clear:both;">
+    <p style="float:left;padding-top:3px">· 개인정보의 수집 및 이용목적</p>
+    <p style="float:right"><input type='checkbox' name='com_formmail_check_safe'> 개인정보의 수집 및 이용목적에 동의합니다.</p>
+    </div>
+    <textarea readonly style="font-size:12px; width:100%; padding:5px" rows="9">▶ 개인정보의 수집 및 이용목적
+- 서비스 이용에 따른 본인식별, 실명확인, 가입의사 확인, 연령제한 서비스 이용
+- 고지사항 전달, 불만처리 의사소통 경로 확보, 물품배송 시 정확한 배송지 정보 확보
+- 신규 서비스 등 최신정보 안내 및 개인맞춤서비스 제공을 위한 자료
+- 기타 원활한 양질의 서비스 제공 등
+
+▶ 수집하는 개인정보의 항목
+- 이름, 이메일, 주민등록번호, 주소, 연락처, 핸드폰번호, 그 외 선택항목
+
+▶ 개인정보의 보유 및 이용기간
+- 원칙적으로 개인정보의 수집 또는 제공받은 목적 달성 시 지체 없이 파기합니다.
+- 다만, 원활한 서비스의 상담을 위해 상담 완료 후 내용을 3개월간 보유할 수 있으며
+전자상거래에서의 소비자보호에 관한 법률 등 타법률에 의해 보존할 필요가 있는 경우에는 일정기간 보존합니다.
+</textarea>
+    -->
+</td>
+</tr>
+
+
+</tbody></table>
+<div align="center">
+<a href="#" onclick="com_formmail_formCheck(); return false;" class="btn btn-sm btn-light"><span>확인</span></a>
+<a href="javascript: document.com_formmail.reset();" class="btn btn-sm btn-light"><span>취소</span></a>
+
+
+</div>
+</td>
+</tr>
+
+</tbody></table>
+<!-- //폼메일 끝---------------------------------------------------------------------------------------->
+                            <script>
+                            var o_hidden = document.createElement('input');
+                            o_hidden.type = 'hidden';
+                            o_hidden.name = 'ssl_redirect_domain';
+                            o_hidden.value = 'http://yoboy.co.kr';
+                            document.com_formmail.appendChild(o_hidden);
+                            </script>
+                            
+        </div>
+      </div>
+
+      <footer id="main_footer">
+        <div>
+            <p>주소: 서울특별시 영등포구 신길동 가마산로 71길 19, 1층</p>
+            <p>TEL: 1600-4342 | e-mail: nodoubt1111@naver.com</p>
+            <p>사업자등록번호: 799-81-01582 | 대표: 조항돈</p>
+            <span>Coptright©2020 푸드모바일 All right reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>
