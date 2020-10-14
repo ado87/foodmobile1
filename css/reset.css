@@ -4,6 +4,19 @@
     list-style-type: none;
     text-decoration: none;
 }
+a {
+    color: #000;
+}
+
+.phone_num {
+    width: 130px;
+    position: fixed;
+    right: 0;
+    top: 200px;
+}
+.phone_num img {
+  width: 120px;
+}
 
 header {
     width: 100%;

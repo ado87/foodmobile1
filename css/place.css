@@ -18,7 +18,7 @@
 }
 #content > div {
     width: 1920px;
-    height: 1200px;
+    height: 1000px;
     overflow: hidden;
 }
 #content > div > h1 {
@@ -35,45 +35,72 @@
     width: 1300px;
     margin: 0 auto;
 }
-#content > div > table {
+#content > div > .info {
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+}
+#content > div > .info > table {
     width: 800px;
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
 }
-#content > div > table,td,th {
+#content > div > .info > table,td,th {
     width: 1200px;
     padding: 20px;
     border-collapse: collapse;
     /* border-top: #000 solid 1px; */
 }
-#content > div > table > thead th {
+#content > div > .info > table > thead th {
     /* background: #f57921; */
     color: #000 !important;
     border-top: #000 solid 1px !important;
     border-bottom: #000 solid 1px !important;
     font-size: 17px;
 }
-#content > div > table .first {
+#content > div > .info > table .first {
     width: 300px;
     color: #854111;
     border-top: #000 ;
     border-bottom: #000 dotted 1px;
     /* background: #999; */
 }
-#content > div > table .second {
+#content > div > .info > table .second {
     width: 100px;
     border-bottom: #000 dotted 1px;
 }
-#content > div > table .adress {
+#content > div > .info > table .adress {
     width: 800px;
     border-bottom: #000 dotted 1px;
 }
-#content > div > table .phone {
+#content > div > .info > table .phone {
     width: 200px;
     border-bottom: #000 dotted 1px;
 }
+
 tr {
     display: table-row;
     vertical-align: inherit;
+}
+
+#content > .button {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+#content > .button > ul > li {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #999;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+#content > .button > ul > li a {
+
+    color: #fff;
 }

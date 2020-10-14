@@ -23,3 +23,8 @@
     margin: 0 auto;
     margin-top: 20px;
 }
+.info > div {
+    width: 1200px;
+    height: 1px;
+    background: #8c6239;
+}
